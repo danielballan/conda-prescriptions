@@ -29,7 +29,7 @@ done
 
 cd $PREFIX/lib
 echo '## link lib'
-for fn in $PREFIX/epics/lib/$EPICS_HOST_ARCH/*.so* ; do
+for fn in $PREFIX/epics/lib/$EPICS_HOST_ARCH/*.dylib* ; do
     bn=`basename $fn`
     if [ ! -e $EPICS_BASE/$bn ]
        then
